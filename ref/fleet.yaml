@@ -1,0 +1,9 @@
+defaultNamespace: ref
+
+helm:
+  chart: .
+  valuesFrom:
+    - configMapKeyRef:
+        name: cluster-info
+        namespace: default
+        key: values.yaml
