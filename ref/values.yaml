@@ -1,10 +1,4 @@
-rancher:
-  clusterId: placeholder
-  clusterName: placeholder
-
-  aws:
-    account: placeholder
-    region: placeholder
-
-clusterLabelId: placeholder
-clusterLabelName: placeholder
+rancherClusterId: placeholder
+rancherClusterName: placeholder
+rancherAwsAccount: placeholder
+rancherAwsRegion: placeholder
