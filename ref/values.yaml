@@ -5,3 +5,6 @@ rancher:
   aws:
     account: placeholder
     region: placeholder
+
+clusterLabelId: placeholder
+clusterLabelName: placeholder

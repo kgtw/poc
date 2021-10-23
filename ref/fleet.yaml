@@ -3,6 +3,9 @@ namespace: ref
 
 helm:
   chart: .
+  values:
+    clusterLabelId: global.fleet.clusterLabels.management.cattle.io/cluster-name
+    clusterLabelName: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
   valuesFrom:
     - configMapKeyRef:
         name: cluster-info
