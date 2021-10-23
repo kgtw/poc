@@ -1,5 +1,5 @@
-defaultNamespace: ref
-namespace: ref
+#defaultNamespace: ref
+#namespace: ref
 
 helm:
   chart: .
