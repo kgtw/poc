@@ -1,4 +1,5 @@
 defaultNamespace: ref
+namespace: ref
 
 helm:
   chart: .
