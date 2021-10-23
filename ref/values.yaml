@@ -1,1 +1,7 @@
+rancher:
+  clusterId: ''
+  clusterName: ''
 
+  aws:
+    account: ''
+    region: ''
