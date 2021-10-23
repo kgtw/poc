@@ -6,3 +6,12 @@ metadata:
     {{- include "ref.labels" . | nindent 4 }}
   name: {{ template "ref.name" . | quote }}
   namespace: {{ template "ref.name" . | quote }}
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  labels:
+  {{- include "ref.labels" . | nindent 4 }}
+  name: {{ template "ref.name" . | quote }}
+  namespace: {{ template "ref.name" . | quote }}
