@@ -1,7 +1,7 @@
 rancher:
-  clusterId: ''
-  clusterName: ''
+  clusterId: placeholder
+  clusterName: placeholder
 
   aws:
-    account: ''
-    region: ''
+    account: placeholder
+    region: placeholder
