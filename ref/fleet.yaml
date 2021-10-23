@@ -1,4 +1,4 @@
-#defaultNamespace: ref
+defaultNamespace: ref
 #namespace: ref
 
 helm:
