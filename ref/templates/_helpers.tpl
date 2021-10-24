@@ -12,6 +12,6 @@ app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 helm.sh/chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
 cluster-name: {{ .Values.rancherClusterName }}
 cluster-id: {{ .Values.rancherClusterId }}
-{{/*aws-account: {{ .Values.rancherAwsAccount }}*/}}
+aws-account: {{ .Values.rancherAwsAccount | quote }}
 {{/*aws-region: {{ .Values.rancherAwsRegion }}*/}}
 {{- end }}
