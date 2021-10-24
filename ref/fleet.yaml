@@ -6,8 +6,13 @@ helm:
 #  values:
 #    rancherClusterId: global.fleet.clusterLabels.management.cattle.io/cluster-name
 #    rancherClusterName: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
-  valuesFrom:
-  - configMapKeyRef:
-      name: terraform-cluster-info
-      namespace: default
-      key: values.yaml
+
+targetCustomizations:
+  - name: all
+    clusterSelector: {}
+    helm:
+      valuesFrom:
+        - configMapKeyRef:
+            name: terraform-cluster-info
+            namespace: default
+            key: values.yaml

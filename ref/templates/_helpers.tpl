@@ -15,5 +15,3 @@ cluster-id: {{ .Values.rancherClusterId }}
 aws-account: {{ .Values.rancherAwsAccount }}
 aws-region: {{ .Values.rancherAwsRegion }}
 {{- end }}
-
-
