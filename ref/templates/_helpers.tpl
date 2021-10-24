@@ -10,8 +10,8 @@ app.kubernetes.io/name: {{ include "ref.name" . }}
 app.kubernetes.io/part-of: {{ include "ref.name" . }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 helm.sh/chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
-cluster-name: {{ .Values.rancherClusterName }}
-cluster-id: {{ .Values.rancherClusterId }}
-aws-account: {{ .Values.rancherAwsAccount | quote }}
-{{/*aws-region: {{ .Values.rancherAwsRegion }}*/}}
+cluster-name: {{ .Values.rancher.clusterName }}
+cluster-id: {{ .Values.rancher.clusterId }}
+aws-account: {{ .Values.rancher.aws.accountId | quote }}
+aws-region: {{ .Values.rancher.aws.region }}
 {{- end }}
