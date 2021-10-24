@@ -1,4 +1,4 @@
-rancherClusterId: placeholder
+#rancherClusterId: placeholder
 rancherClusterName: placeholder
-rancherAwsAccount: placeholder
-rancherAwsRegion: placeholder
+#rancherAwsAccount: placeholder
+#rancherAwsRegion: placeholder
